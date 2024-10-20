@@ -1,0 +1,183 @@
+/* Contact Wrapper */
+.contact-wrapper {
+  width: 80%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact Heading */
+.contact-heading {
+  padding: 10px 20px;
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #E85A4F;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 101%;
+  margin-bottom: 5%
+}
+
+/* Contact Information */
+.contact-info {
+  width: 40%;
+  padding: 20px;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #66FCF1;
+}
+
+.info-item p {
+  margin: 0px 0 0;
+  font-size: 24px;
+  color: #EEEEEE;
+  font-family: 'DejaVu Sans Mono', monospace;
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 104px;
+}
+
+.social-media a {
+  font-size: 24px;
+  color: #66FCF1;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #E85A4F;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 62%;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 24px;
+  color: #66FCF1;
+  margin-bottom: 2%;
+  font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #1F2833;
+  color: #FFFFFF;
+  margin-bottom: 1%;
+  font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #66FCF1;
+}
+
+/* Send Button */
+.send-button {
+  background-color: #66FCF1;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.send-button:hover {
+  background-color: #EEEEEE;
+}
+
+.success-message {
+  color: #4CAF50;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #FF5722;
+  margin-top: 10px;
+  font-size: 16px;
+}
+/* Style for the circular icon */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(102, 252, 241, 0.2); /* Transparent background */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 15px; /* Space between icon and text */
+  margin-top: 3px;
+}
+
+/* Style for the icons */
+.icon-circle i {
+  font-size: 24px;
+  color: #66FCF1;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the icon circle */
+.icon-circle:hover {
+  background-color: rgba(102, 252, 241, 0.5); /* Slightly darker transparent background */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+/* Hover effect for the icon color */
+.icon-circle:hover i {
+  color: #FFFFFF; /* Change icon color on hover */
+}
+
+/* Style for the info items */
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-info, .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

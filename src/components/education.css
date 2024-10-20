@@ -1,0 +1,234 @@
+.education-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(31, 40, 51, 0.8); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 50px; /* Bigger margin at the top */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Width reduced to 80% */
+  max-width: 900px; /* Max width to prevent it from stretching too wide */
+}
+
+.education-logo {
+  flex: 0 0 30%; /* 30% width for the logo section */
+  display: flex;
+  padding:15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.education-content {
+  flex: 1 56%; /* Remaining space for content */
+  padding-left: 20px;
+}
+
+.education-content h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'DejaVu Sans Mono', monospace;
+  color: #FBE9D0;
+}
+
+.education-content p {
+  margin: 8px 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.education-heading {
+  padding: 10px 20px;
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #E85A4F; /* Adjust color as needed */
+  text-align: center;
+  margin-top: 60px; /* Space above the heading */
+  margin-bottom: 20px; /* Space between the heading and the education box */
+  margin-left: 204px;
+}
+
+.education-section {
+  /* background-color: rgba(34, 40, 49, 0.5);*/ /* Semi-transparent background */
+  background: linear-gradient(to right, rgba(11, 12, 16,0.5) 10%, rgba(34, 40, 49, 0.5));
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 80%; /* Width less than full page */
+  margin-top: 35px; /* Space from the heading */
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+
+.education-wrapper {
+  margin-top: 40px;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 2%;
+}
+
+
+.education-logo {
+  flex: 1;
+  margin-right: 20px;
+  background-color: rgba(34, 40, 49, 0.2); /* Background color of the box */
+  border-radius: 15px; /* Curved edges */
+  box-shadow: 0 4px 10px rgba(102, 252, 241, 0.5); /* Box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+.education-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'DejaVu Sans Mono', monospace !important;
+  color: '#E85A4F' !important;
+}
+
+.education-content p {
+  margin: 5px 0;
+}
+
+/* Updated CSS for Education Section */
+
+/* Wrapper for the whole education section */
+.education-wrapper {
+  margin-top: 40px;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Education Heading */
+.education-heading {
+  padding: 10px 20px;
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #E85A4F; /* Adjust color as needed */
+  text-align: center;
+  margin-top: 60px; /* Space above the heading */
+  margin-bottom: 20px; /* Space between the heading and the education box */
+}
+
+/* Individual Education Section */
+.education-section {
+  background: linear-gradient(to right, rgba(11, 12, 16, 0.5) 10%, rgba(34, 40, 49, 0.5));
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 80%; /* Width less than full page */
+  margin-top: 35px; /* Space from the heading */
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-bottom: 40px;
+  opacity: 0; /* Initial opacity for animations */
+  transform: translateY(100px); /* Start position for slide-up */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation timing */
+}
+
+/* Animation Class */
+.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Education Item */
+.education-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(31, 40, 51, 0.8); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 50px; /* Bigger margin at the top */
+  width: 80%; /* Width reduced to 80% */
+  max-width: 900px; /* Max width to prevent it from stretching too wide */
+}
+
+/* Education Logo */
+.education-logo {
+  flex: 0 0 30%; /* 30% width for the logo section */
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 40, 49, 0.2); /* Background color of the box */
+  border-radius: 15px; /* Curved edges */
+  box-shadow: 0 4px 10px rgba(102, 252, 241, 0.5); /* Box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Logo Image */
+.logo-image {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Education Content */
+.education-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Education Content Heading */
+.education-content h2 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'DejaVu Sans Mono', monospace;
+  color: #FBE9D0;
+}
+
+/* Education Content Paragraphs */
+.education-content p {
+  margin: 8px 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .education-section {
+    flex-direction: column; /* Stacks the image and content vertically on smaller screens */
+    transform: translateY(0); /* Disable slide-in for smaller screens */
+    opacity: 1; /* Ensure opacity is fully visible on smaller screens */
+  }
+}
+
+

@@ -1,0 +1,165 @@
+/* Wrapper Styling */
+.projects-wrapper {
+  padding: 40px 20px;
+  background-color: transparent; /* Use 'transparent' instead of 'none' */
+  text-align: center;
+}
+
+/* Heading Styling */
+.projects-heading {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Project Section Styling */
+.project-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  opacity: 0; /* Initial opacity for animations */
+  transform: translateX(-100px); /* Start position for left slide-in */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation timing */
+}
+
+.project-section.project-card.reverse-layout {
+  transform: translateX(100px) !important; /* Start position for right slide-in */
+}
+
+/* Animation Classes */
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Project Card Styling */
+.project-card {
+  position: relative; /* Allows positioning of the project number */
+  display: flex;
+  background: linear-gradient(to right, rgba(11, 12, 16, 0.5) 10%, rgba(34, 40, 49, 0.5));
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Image Styling */
+.project-image {
+  flex: 1;
+  max-width: 368px;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Project Details Styling */
+.project-details {
+  position: relative; /* Ensures project number is positioned inside this container */
+  flex: 2;
+  padding: 30px;
+  color: #EEEEEE;
+  text-align: left;
+}
+
+/* Project Number Styling */
+.project-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #66FCF1;
+  padding: 20px;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+/* Project Title Styling */
+.project-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'DejaVu Sans Mono', monospace;
+  color: #66FCF1;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Project Description Styling */
+.project-description {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: 'DejaVu Sans Mono', monospace;
+  line-height: 1.6;
+}
+
+/* Tech Stack Styling */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5%;
+}
+
+.tech-item {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: 'DejaVu Sans Mono', monospace;
+  color: black;
+}
+
+/* Button Styling */
+.view-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #66FCF1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #45A29E;
+}
+.project-title a {
+  transition: color 0.3s !important;
+}
+
+.project-title a:hover {
+  color: #66FCF1 !important; /* Change color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .project-card,
+  .project-card.reverse-layout {
+    flex-direction: column; /* Stacks the image and content vertically on smaller screens */
+  }
+
+  .project-image,
+  .project-details {
+    max-width: 100%;
+  }
+
+  .project-section {
+    transform: translateX(0); /* Disable slide-in for smaller screens */
+    opacity: 1; /* Ensure opacity is fully visible on smaller screens */
+  }
+}

@@ -1,0 +1,228 @@
+.experience-wrapper {
+  margin-top: 40px;
+  padding: 20px;
+  margin-left: 10%;
+}
+
+.experience-heading {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-section {
+  /* background-color: rgba(34, 40, 49, 0.5);*/ /* Semi-transparent background */
+  background: linear-gradient(to right, rgba(11, 12, 16,0.5) 10%, rgba(34, 40, 49, 0.5));
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 60%; /* Width less than full page */
+  margin-top: 35px; /* Space from the heading */
+  display: flex;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+
+.company-info {
+  width: 30%;
+  position: relative;
+}
+
+.vertical-line {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #66FCF1; /* Line color */
+}
+
+.company-name {
+    font-size: 48px; /* Adjust the font size as needed */
+    letter-spacing: 5px; /* Increase letter spacing */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add vertical spacing */
+    font-family: 'Arial', sans-serif; /* Set your desired font family */
+    color: #EEEEEE; /* Set your desired text color */
+}
+.company-name:hover{
+    color: #66FCF1;
+}
+
+.company-infoss {
+    background-color: rgba(238, 238, 238, 0.7); /* Background color with transparency */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align the text */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the text vertically */
+    padding: 3px 6px; /* Padding to keep text snug */
+    width: 60%;
+}
+
+.company-full-name {
+    font-size: 15px; /* Adjust the font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Set a dark color for the text */
+    margin: 0; /* Remove any default margins */
+    padding-left: 7px; /* Remove any additional padding */
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.role-details {
+  width: 70%;
+  padding-left: 32px;
+}
+
+.role-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'DejaVu Sans Mono', monospace; /* Set your desired font family */
+  color: #66FCF1; /* Set your desired text color */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.role-duration {
+  font-style: italic;
+  color: #76ABAE;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: "DejaVu Sans Mono", monospace;
+}
+.arrow {
+  color: #66FCF1; /* Color for the arrows */
+}
+
+.description {
+  color: #EEEEEE; /* Color for the description text */
+}
+
+.role-description {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.role-description li {
+  margin-bottom: 10px;
+  font-family: monospace, fantasy;
+  position: relative;
+  padding-left: 40px; /* Space for arrow */
+}
+
+.role-description li::before {
+  content: '>>';
+  position: absolute;
+  left: 0;
+  right: 2px;
+  color: #76ABAE; /* Arrow color */
+}
+
+
+.more-info-button {
+  background-color: #66FCF1;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: Georgia, fantasy;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.more-info-button:hover {
+  background-color: #FBE9D0;
+}
+
+
+/* Updated CSS for Experience Section */
+
+/* Wrapper for the whole experience section */
+.experience-wrapper {
+  margin-top: 40px;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Experience Heading */
+.experience-heading {
+  padding: 10px 20px;
+  font-size: 48px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  color: #E85A4F; /* Adjust color as needed */
+  text-align: center;
+  margin-top: 60px; /* Space above the heading */
+  margin-bottom: 20px; /* Space between the heading and the experience box */
+}
+
+/* Individual Experience Section */
+.experience-section {
+  background: linear-gradient(to right, rgba(11, 12, 16, 0.5) 10%, rgba(34, 40, 49, 0.5));
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 80%; /* Width less than full page */
+  margin-top: 35px; /* Space from the heading */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  opacity: 0; /* Initial opacity for animations */
+  transform: translateY(100px); /* Start position for slide-up */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation timing */
+}
+
+/* Animation Class */
+.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Company Info */
+.company-info {
+  flex: 0 0 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Role Details */
+.role-details {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* More Info Button */
+.more-info-button {
+  background-color: #66FCF1;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.more-info-button:hover {
+  background-color: #4bc8c8;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .experience-section {
+    flex-direction: column; /* Stacks the sections vertically on smaller screens */
+    transform: translateY(0); /* Disable slide-in for smaller screens */
+    opacity: 1; /* Ensure opacity is fully visible on smaller screens */
+  }
+}

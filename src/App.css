@@ -1,38 +1,279 @@
-.App {
-  text-align: center;
+.App{
+  overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html, body {
+  height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
+}
+
+/* The main container of your app */
+.App {
+  flex: 1; /* Allow this to grow and fill the available space */
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.skills-tab{
+    margin-top: 40px;
+}
+/* Styles for the Navbar */
+.navi{
+    background: linear-gradient(to right, #1F2833, #376E6F) !important;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; /* Adjust the spacing between items */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  color: #ffffff;
+  font-family: 'Luminari', fantasy;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #66FCF1;
+  text-decoration: underline;
+}
+.navbar {
+  background-color: transparent;  /* Semi-transparent black */
+  background: linear-gradient(to right, #0B0C10, #222831) !important;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  gap: 62px;
+  width:97%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-left {
+  flex: 1 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-middle {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between the links */
+  margin-left: -17%;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-family: 'Luminari', fantasy;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #66FCF1; /* Change color on hover */
+}
+
+.middle-container {
+  margin-top: 3px;
+  display: flex;
+  gap: 50px; /* Space between links */
+  padding: 10px 30px; /* Padding for the box */
+  background-color: rgba(0, 0, 0, 0.3); /* Background color of the box */
+  border-radius: 15px; /* Curved edges */
+  box-shadow: 0 4px 10px rgba(102, 252, 241, 0.5); /* Box shadow */
+}
+
+.navbar-left .navbar-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-right .contact-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #66FCF1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-right .contact-button:hover{
+  background-color: #FBE9D0;
+}
+
+.contact-button {
+  font-family: "Luminari", fantasy;
+}
+.button-container .dw-cv:hover{
+  background-color: #FBE9D0 !important;
+}
+.button-container .abt-me:hover{
+  background-color: #FBE9D0 !important;
+}
+
+/* Ensure particles canvas covers the full screen */
+
+/* Particle background styling */
+#particles canvas {
+  z-index: -1;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #0B0C10 10%, #222831) !important;
+}
+
+.main-text {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+    font-size: 128px;
+    width: 100%;
+    height: 100%;
+    gap: 20px; /* Adjust the value as needed */
+}
+.main-text-sub1{
+    width: 50%;
+    margin-left: 2%;
+}
+.main-text-sub2{
+    width: 50%;
+}
+.app-nav-maine{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.navi{
+    height: 20%;
+    width: 100%;
+}
+
+
+.maine{
+    display: block;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 10.5%;
+}
+/* Hexagon styling */
+.hexagon-container {
+  perspective: 1000px; /* Needed for 3D effect */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.flip-card{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 14%;
+}
+
+.hexagon {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+}
+
+.hexagon.flipped, .hexagon-container:hover .hexagon {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.hexagon-front,
+.hexagon-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.hexagon-front {
+  background-color: none;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(102, 252, 241, 0.5);
+}
+
+/* Style the back side */
+.hexagon-back {
+  background-color: #31363F;
+  box-shadow: 0 4px 10px rgba(102, 252, 241, 0.5);
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  text-align: justify;
+}
+
+/* Adjusted image for thinner border */
+.hexagon-image {
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+  object-position: 50% 24%;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+
+
+.about-text {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+.centered-text {
+    display: flex;                          /* Use flexbox for centering */
+    justify-content: center;                /* Center items horizontally */
+    align-items: center;                    /* Center items vertically */
+    font-size: 32px;                       /* Adjust the font size */
+    font-weight: bold;                     /* Make the text bold */
+    letter-spacing: 2px;                   /* Space between letters */
+    margin-top: 60px;                      /* Space above the text */
+    font-family: 'Georgia', sans-serif;      /* Specify the font family */
+}
+.centered-text span {
+    margin: 0 40px;                        /* Add space between spans (left and right) */
 }
